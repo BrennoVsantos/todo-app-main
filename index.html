@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Todo app</title>
+
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="todo-container">
+        <div class="head">
+          <h1>Todo</h1>
+          <button class="theme">
+            <img src="images/icon-sun.svg" alt="Light-theme" />
+          </button>
+        </div>
+
+        <div class="input-container">
+          <div class="checkbox inpt"></div>
+          <input type="text" id="tarefa" placeholder="Crie uma nova tarefa" />
+        </div>
+
+        <div class="tarefas">
+          <ul id="lista-tarefas"></ul>
+        </div>
+
+        <div class="footer">
+          <p>Restantes: <span id="restantes">0</span></p>
+
+          <div class="filters">
+            <button class="ft filter-all active">Tudo</button>
+            <button class="ft filter-active">Ativas</button>
+            <button class="ft filter-completed">Concluidas</button>
+          </div>
+
+          <button id="limpa-tudo" class="ft">Limpar Concluidas</button>
+        </div>
+
+        <div class="filters mobile-filter">
+          <button class="ft mb-filter-all active">Tudo</button>
+          <button class="ft mb-filter-active">Ativas</button>
+          <button class="ft mb-filter-completed">Concluidas</button>
+        </div>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/BrennoVsantos" target="_blank">Brenno</a>.
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
